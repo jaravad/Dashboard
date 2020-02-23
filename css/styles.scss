@@ -56,16 +56,35 @@ body {
   box-shadow: 5px 5px 14px #bac5cf, -5px -5px 14px #ffffff;
 }
 
+.softer {
+  background: #deeaf6;
+  box-shadow: 5px 5px 14px #bac5cf98, -5px -5px 14px #ffffffee;
+}
+
 .log-in-card {
   padding: 2%;
-
-  h2 {
-    margin-top: 0.5em;
-  }
 }
 
 .company:before {
   content: "Gasify";
   display: block;
   font-weight: 700;
+}
+
+.form-control:focus {
+  background-color: transparent;
+}
+
+.sign-in-btn {
+  background-color: #2a65c9;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 5px 5px 14px #2a65c998;
+}
+
+.sign-in-btn:hover {
+  background-color: #114eb6;
+}
+
+.sign-in-btn:focus {
+  background-color: #114eb6;
 }
