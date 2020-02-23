@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap");
+@font-face {
+  font-family: "hk_grotesk";
+  src: url("../fonts/hkgrotesk-bold-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hk_grotesk";
+  src: url("../fonts/hkgrotesk-light-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hk_grotesk";
+  src: url("../fonts/hkgrotesk-medium-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hk_grotesk";
+  src: url("../fonts/hkgrotesk-regular-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hk_grotesk";
+  src: url("../fonts/hkgrotesk-semibold-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-size: 16px;
+  font-family: "hk_grotesk", sans-serif;
+  background-color: #deeaf6;
+}
+
+.soft {
+  border-radius: 15px;
+  background: #deeaf6;
+  -webkit-box-shadow: 5px 5px 14px #bac5cf, -5px -5px 14px #ffffff;
+          box-shadow: 5px 5px 14px #bac5cf, -5px -5px 14px #ffffff;
+}
+
+.log-in-card {
+  padding: 2%;
+}
+
+.log-in-card h2 {
+  margin-top: 0.5em;
+}
+
+.company:before {
+  content: "Gasify";
+  display: block;
+  font-weight: 700;
+}
+/*# sourceMappingURL=styles.css.map */
