@@ -1,0 +1,32 @@
+$hk: "hk_grotesk", sans-serif;
+$josefin: "Josefin Sans", sans-serif;
+$back-color: #deeaf6;
+
+body {
+  font-family: $josefin;
+  background-color: $back-color;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+.navbar {
+  background-color: #8f59c1;
+  .navbar-brand {
+    font-family: $hk;
+  }
+}
+
+.soft {
+  border-radius: 15px;
+  background: $back-color;
+  box-shadow: 5px 5px 14px #bac5cf, -5px -5px 14px #ffffff;
+}

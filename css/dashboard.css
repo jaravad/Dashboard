@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap");
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #deeaf6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+.navbar {
+  background-color: #8f59c1;
+}
+
+.navbar .navbar-brand {
+  font-family: "hk_grotesk", sans-serif;
+}
+
+.soft {
+  border-radius: 15px;
+  background: #deeaf6;
+  -webkit-box-shadow: 5px 5px 14px #bac5cf, -5px -5px 14px #ffffff;
+          box-shadow: 5px 5px 14px #bac5cf, -5px -5px 14px #ffffff;
+}
+/*# sourceMappingURL=dashboard.css.map */
