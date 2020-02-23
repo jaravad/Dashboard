@@ -1,0 +1,61 @@
+$hk: "hk_grotesk", sans-serif;
+$josefin: "Josefin Sans", sans-serif;
+$back-color: #deeaf6;
+
+body {
+  font-size: 16px;
+  font-family: $hk;
+  background-color: $back-color;
+}
+
+.back {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/adam-kool-ndN00KmbJ1c-unsplash.jpg");
+}
+
+.soft {
+  border-radius: 15px;
+  background: $back-color;
+  // box-shadow: 5px 5px 14px #bac5cf, -5px -5px 14px #ffffff;
+}
+
+.softer {
+  border-radius: 10px;
+  background: $back-color;
+  box-shadow: inset 5px 5px 14px #bac5cf98;
+}
+
+.log-in-card {
+  padding: 2%;
+}
+
+.company:before {
+  content: "Gasify";
+  display: block;
+  font-weight: 700;
+}
+
+.form-group {
+  width: 70%;
+}
+
+.form-control:focus {
+  background-color: transparent;
+}
+
+.sign-in-btn {
+  background-color: #2a65c9;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 5px 5px 14px #2a65c998;
+}
+
+.sign-in-btn:hover {
+  background-color: #114eb6;
+}
+
+.sign-in-btn:focus {
+  background-color: #114eb6;
+}

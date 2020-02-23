@@ -1,0 +1,60 @@
+body {
+  font-size: 16px;
+  font-family: "hk_grotesk", sans-serif;
+  background-color: #deeaf6;
+}
+
+.back {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/adam-kool-ndN00KmbJ1c-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/adam-kool-ndN00KmbJ1c-unsplash.jpg");
+}
+
+.soft {
+  border-radius: 15px;
+  background: #deeaf6;
+}
+
+.softer {
+  border-radius: 10px;
+  background: #deeaf6;
+  -webkit-box-shadow: inset 5px 5px 14px #bac5cf98;
+          box-shadow: inset 5px 5px 14px #bac5cf98;
+}
+
+.log-in-card {
+  padding: 2%;
+}
+
+.company:before {
+  content: "Gasify";
+  display: block;
+  font-weight: 700;
+}
+
+.form-group {
+  width: 70%;
+}
+
+.form-control:focus {
+  background-color: transparent;
+}
+
+.sign-in-btn {
+  background-color: #2a65c9;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-box-shadow: 5px 5px 14px #2a65c998;
+          box-shadow: 5px 5px 14px #2a65c998;
+}
+
+.sign-in-btn:hover {
+  background-color: #114eb6;
+}
+
+.sign-in-btn:focus {
+  background-color: #114eb6;
+}
+/*# sourceMappingURL=log-in-styles.css.map */
