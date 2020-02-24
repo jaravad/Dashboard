@@ -8,7 +8,6 @@ body {
 }
 
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
 
 h1,
 h2,
@@ -33,18 +32,19 @@ h6 {
 }
 
 .person-card {
-  border-right: 1px solid lightgray;
-
+  margin: 1em 0;
   img {
     border-radius: 50%;
   }
 
   p {
     margin: 0;
+    text-align: center;
   }
 
   p:first-of-type {
     margin-top: 0.5em;
+    font-size: 0.9em;
   }
 
   p:last-of-type {
