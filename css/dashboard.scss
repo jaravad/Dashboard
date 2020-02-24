@@ -1,6 +1,6 @@
 $hk: "hk_grotesk", sans-serif;
 $josefin: "Josefin Sans", sans-serif;
-$back-color: #deeaf6;
+$back-color: #f3f3f3;
 $alata: "Alata", sans-serif;
 body {
   font-family: $josefin;
@@ -27,7 +27,7 @@ h6 {
 }
 
 .soft {
-  border-radius: 15px;
+  border-radius: 14px;
   background: $back-color;
-  box-shadow: 5px 5px 14px #bac5cf, -5px -5px 14px #ffffff;
+  box-shadow: 5px 5px 13px #dbdbdb, -5px -5px 13px #ffffff;
 }

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
 body {
   font-family: "Josefin Sans", sans-serif;
-  background-color: #deeaf6;
+  background-color: #f3f3f3;
 }
 
 h1,
@@ -23,9 +23,9 @@ h6 {
 }
 
 .soft {
-  border-radius: 15px;
-  background: #deeaf6;
-  -webkit-box-shadow: 5px 5px 14px #bac5cf, -5px -5px 14px #ffffff;
-          box-shadow: 5px 5px 14px #bac5cf, -5px -5px 14px #ffffff;
+  border-radius: 14px;
+  background: #f3f3f3;
+  -webkit-box-shadow: 5px 5px 13px #dbdbdb, -5px -5px 13px #ffffff;
+          box-shadow: 5px 5px 13px #dbdbdb, -5px -5px 13px #ffffff;
 }
 /*# sourceMappingURL=dashboard.css.map */

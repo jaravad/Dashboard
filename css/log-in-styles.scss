@@ -1,6 +1,6 @@
 $hk: "hk_grotesk", sans-serif;
 $josefin: "Josefin Sans", sans-serif;
-$back-color: #deeaf6;
+$back-color: #f3f3f3;
 
 body {
   font-size: 16px;
@@ -25,7 +25,7 @@ body {
 .softer {
   border-radius: 10px;
   background: $back-color;
-  box-shadow: inset 5px 5px 14px #bac5cf98;
+  box-shadow: inset 6px 6px 22px #e4e4e4, inset -6px -6px 22px #ffffff;
 }
 
 .log-in-card {

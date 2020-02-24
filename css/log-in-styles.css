@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   font-family: "hk_grotesk", sans-serif;
-  background-color: #deeaf6;
+  background-color: #f3f3f3;
 }
 
 .back {
@@ -14,14 +14,14 @@ body {
 
 .soft {
   border-radius: 15px;
-  background: #deeaf6;
+  background: #f3f3f3;
 }
 
 .softer {
   border-radius: 10px;
-  background: #deeaf6;
-  -webkit-box-shadow: inset 5px 5px 14px #bac5cf98;
-          box-shadow: inset 5px 5px 14px #bac5cf98;
+  background: #f3f3f3;
+  -webkit-box-shadow: inset 6px 6px 22px #e4e4e4, inset -6px -6px 22px #ffffff;
+          box-shadow: inset 6px 6px 22px #e4e4e4, inset -6px -6px 22px #ffffff;
 }
 
 .log-in-card {
