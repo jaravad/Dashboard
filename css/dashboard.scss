@@ -31,3 +31,23 @@ h6 {
   background: $back-color;
   box-shadow: 5px 5px 13px #dbdbdb, -5px -5px 13px #ffffff;
 }
+
+.person-card {
+  border-right: 1px solid lightgray;
+
+  img {
+    border-radius: 50%;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  p:first-of-type {
+    margin-top: 0.5em;
+  }
+
+  p:last-of-type {
+    font-size: 0.7em;
+  }
+}

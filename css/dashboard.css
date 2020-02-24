@@ -28,4 +28,24 @@ h6 {
   -webkit-box-shadow: 5px 5px 13px #dbdbdb, -5px -5px 13px #ffffff;
           box-shadow: 5px 5px 13px #dbdbdb, -5px -5px 13px #ffffff;
 }
+
+.person-card {
+  border-right: 1px solid lightgray;
+}
+
+.person-card img {
+  border-radius: 50%;
+}
+
+.person-card p {
+  margin: 0;
+}
+
+.person-card p:first-of-type {
+  margin-top: 0.5em;
+}
+
+.person-card p:last-of-type {
+  font-size: 0.7em;
+}
 /*# sourceMappingURL=dashboard.css.map */
