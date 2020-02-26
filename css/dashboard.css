@@ -19,6 +19,23 @@ h6 {
 
 .navbar .navbar-brand {
   font-family: "hk_grotesk", sans-serif;
+  font-size: 1.5em;
+}
+
+.color-1 {
+  color: #845ec2;
+}
+
+.color-2 {
+  color: #d65db1;
+}
+
+.color-3 {
+  color: #fc587e;
+}
+
+.color-4 {
+  color: #fb5656;
 }
 
 .soft {
