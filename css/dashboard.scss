@@ -52,6 +52,11 @@ h6 {
   box-shadow: 5px 5px 13px #dbdbdb, -5px -5px 13px #ffffff;
 }
 
+.softer {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #ffffff;
+}
+
 .person-card {
   margin: 1em 0;
   img {
@@ -85,16 +90,8 @@ a:hover {
   color: unset;
 }
 
-.results-title:after {
-  content: "";
-  display: block;
-  min-height: 7em;
-  height: 20vh;
-  margin-top: 0.5em;
-  background-image: url("../images/undraw_hire_te5y.svg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+.p-hk p {
+  font-family: $hk;
 }
 
 .results {
@@ -103,6 +100,14 @@ a:hover {
 
 .results:hover {
   background-color: #e4e4e4;
+}
+
+.results div img {
+  transition: transform 0.3s ease-in;
+}
+
+.results:hover div img {
+  transform: scale(1.05);
 }
 
 .globe {
