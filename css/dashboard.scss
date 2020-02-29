@@ -1,7 +1,6 @@
 $hk: "hk_grotesk", sans-serif;
 $josefin: "Josefin Sans", sans-serif;
 $back-color: #f3f3f3;
-$alata: "Alata", sans-serif;
 
 html {
   scroll-behavior: smooth;
@@ -25,9 +24,18 @@ h6 {
 
 .navbar {
   background-color: #8f59c1;
+  box-shadow: 0px 10px 15px -6px rgba(0, 0, 0, 0.37);
   .navbar-brand {
     font-family: $hk;
     font-size: 1.5em;
+  }
+  .nav-link.active,
+  .user {
+    transition: color 0.2s ease;
+  }
+  .nav-link.active:hover,
+  .user:hover {
+    color: #ffc8ff !important;
   }
 }
 
@@ -109,7 +117,7 @@ a:hover {
 }
 
 .results div img {
-  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease;
 }
 
 .results:hover div img {

@@ -19,11 +19,24 @@ h6 {
 
 .navbar {
   background-color: #8f59c1;
+  -webkit-box-shadow: 0px 10px 15px -6px rgba(0, 0, 0, 0.37);
+          box-shadow: 0px 10px 15px -6px rgba(0, 0, 0, 0.37);
 }
 
 .navbar .navbar-brand {
   font-family: "hk_grotesk", sans-serif;
   font-size: 1.5em;
+}
+
+.navbar .nav-link.active,
+.navbar .user {
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link.active:hover,
+.navbar .user:hover {
+  color: #ffc8ff !important;
 }
 
 .color-1 {
@@ -108,10 +121,10 @@ a:hover {
 }
 
 .results div img {
-  -webkit-transition: -webkit-transform 0.3s ease-in;
-  transition: -webkit-transform 0.3s ease-in;
-  transition: transform 0.3s ease-in;
-  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .results:hover div img {
