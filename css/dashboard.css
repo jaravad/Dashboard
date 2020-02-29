@@ -93,7 +93,7 @@ a:hover {
 }
 
 .globe {
-  background-position: bottom right;
+  background-position: bottom left;
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../images/undraw_air_support_wy1q.svg");
