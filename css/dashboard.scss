@@ -2,6 +2,11 @@ $hk: "hk_grotesk", sans-serif;
 $josefin: "Josefin Sans", sans-serif;
 $back-color: #f3f3f3;
 $alata: "Alata", sans-serif;
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $josefin;
   background-color: $back-color;
@@ -90,6 +95,7 @@ a:hover {
   color: unset;
 }
 
+/*Different font for p*/
 .p-hk p {
   font-family: $hk;
 }

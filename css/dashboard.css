@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Josefin Sans", sans-serif;
   background-color: #f3f3f3;
@@ -89,6 +93,7 @@ a:hover {
   color: unset;
 }
 
+/*Different font for p*/
 .p-hk p {
   font-family: "hk_grotesk", sans-serif;
 }
