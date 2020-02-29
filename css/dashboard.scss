@@ -85,6 +85,18 @@ a:hover {
   color: unset;
 }
 
+.results-title:after {
+  content: "";
+  display: block;
+  min-height: 7em;
+  height: 20vh;
+  margin-top: 0.5em;
+  background-image: url("../images/undraw_hire_te5y.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .results {
   transition: background-color 0.3s ease;
 }
