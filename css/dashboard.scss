@@ -11,6 +11,12 @@ body {
   background-color: $back-color;
 }
 
+::selection {
+  background: #e0ebe8;
+  color: #545454;
+  text-shadow: none;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap");
 
 h1,

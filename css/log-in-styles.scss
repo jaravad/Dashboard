@@ -8,6 +8,12 @@ body {
   background-color: $back-color;
 }
 
+::selection {
+  background: #e0ebe8;
+  color: #545454;
+  text-shadow: none;
+}
+
 .back {
   background-repeat: no-repeat;
   background-position: center;

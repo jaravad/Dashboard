@@ -8,6 +8,18 @@ body {
   background-color: #f3f3f3;
 }
 
+::-moz-selection {
+  background: #e0ebe8;
+  color: #545454;
+  text-shadow: none;
+}
+
+::selection {
+  background: #e0ebe8;
+  color: #545454;
+  text-shadow: none;
+}
+
 h1,
 h2,
 h3,
