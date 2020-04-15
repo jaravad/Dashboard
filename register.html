@@ -31,7 +31,11 @@
         <!-- <h1 class="company mt-2"></h1> -->
         <!-- <img class="w-25" src="./images/flame.png" alt="logo" /> -->
         <h2 class="mt-1">Crear cuenta de empresa</h2>
-        <form class="d-flex flex-column align-items-center">
+        <form
+          action="./index.html"
+          class="d-flex flex-column align-items-center"
+          name="signupForm"
+        >
           <div class="form-group mb-1">
             <label for="name" class="d-block text-left ml-2 mb-1"
               >Nombre del Representante</label
@@ -186,7 +190,22 @@
       </article>
     </section>
 
-    <script src="./app.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="/__/firebase/7.4.0/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+
+    <script src="/__/firebase/7.4.0/firebase-analytics.js"></script>
+    <script src="/__/firebase/7.4.0/firebase-auth.js"></script>
+    <script src="/__/firebase/7.4.0/firebase-firestore.js"></script>
+
+    <script src="/__/firebase/init.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script src="./signup.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
