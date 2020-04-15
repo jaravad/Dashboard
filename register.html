@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -21,20 +21,17 @@
 
     <title>Regístrate - Sheal</title>
   </head>
-  <body>
+  <body style="font-size: 14px;">
     <section
-      class="container-fluid vh-100 row no-gutters justify-content-center back"
+      class="container-fluid vh-100 row no-gutters justify-content-center back signup"
     >
       <article
-        class="log-in-card text-center soft align-self-center col-11 col-sm-7 col-md-6 col-lg-4"
+        class="log-in-card text-center soft align-self-center col-11 col-sm-7 col-md-6 col-lg-4 my-5"
       >
         <!-- <h1 class="company mt-2"></h1> -->
         <!-- <img class="w-25" src="./images/flame.png" alt="logo" /> -->
         <h2 class="mt-1">Crear cuenta de empresa</h2>
-        <form
-          action="operators.html"
-          class="d-flex flex-column mt-4 align-items-center"
-        >
+        <form class="d-flex flex-column align-items-center">
           <div class="form-group mb-1">
             <label for="name" class="d-block text-left ml-2 mb-1"
               >Nombre del Representante</label
@@ -45,10 +42,69 @@
               name="name"
               id="name"
               placeholder="Nombre"
+              required
             />
           </div>
 
           <div class="form-group mb-1">
+            <label class="d-block text-left ml-2 mb-1">Tipo de documento</label>
+            <div class="d-flex justify-content-around">
+              <div class="custom-control custom-radio">
+                <input
+                  class="custom-control-input"
+                  type="radio"
+                  name="doc"
+                  id="ti"
+                  value="TI"
+                  checked
+                />
+                <label class="custom-control-label" for="ti">
+                  TI
+                </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input
+                  class="custom-control-input"
+                  type="radio"
+                  name="doc"
+                  id="cc"
+                  value="CC"
+                />
+                <label class="custom-control-label" for="cc">
+                  CC
+                </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input
+                  class="custom-control-input"
+                  type="radio"
+                  name="doc"
+                  id="ce"
+                  value="CE"
+                />
+                <label class="custom-control-label" for="ce">
+                  CE
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group mb-2">
+            <label for="numdoc" class="d-block text-left ml-2 mb-1"
+              >Número de documento</label
+            >
+            <input
+              class="form-control border-0 softer"
+              type="text"
+              name="numdoc"
+              id="numdoc"
+              maxlength="16"
+              placeholder="Número"
+              required
+            />
+          </div>
+
+          <div class="form-group mb-2">
             <label for="email" class="d-block text-left ml-2 mb-1"
               >Correo electrónico</label
             >
@@ -58,71 +114,58 @@
               name="email"
               id="email"
               placeholder="Ingresa tu correo"
+              required
             />
           </div>
 
-          <div class="form-group mb-1">
-            <label class="d-block text-left ml-2 mb-1">Tipo de documento</label>
-            <div class="mb-1 d-flex justify-content-around">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="doc"
-                  id="ti"
-                  value="ti"
-                  checked
-                />
-                <label class="form-check-label" for="ti">
-                  TI
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="doc"
-                  id="cc"
-                  value="CC"
-                />
-                <label class="form-check-label" for="cc">
-                  CC
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="doc"
-                  id="ce"
-                  value="CE"
-                />
-                <label class="form-check-label" for="ce">
-                  CE
-                </label>
-              </div>
+          <div class="custom-file form-group mb-1">
+            <input type="file" class="custom-file-input" id="img" required />
+            <label class="custom-file-label text-left overflow-hidden" for="img"
+              >Logo de la empresa</label
+            >
+          </div>
+
+          <div class="form-group mb-1 d-flex justify-content-between">
+            <div class="w-50 pr-2">
+              <label for="empname" class="d-block text-left ml-2 mb-1"
+                >Empresa</label
+              >
+              <input
+                class="form-control border-0 softer"
+                type="text"
+                name="empname"
+                id="empname"
+                placeholder="Digite nombre"
+                required
+              />
+            </div>
+            <div class="w-50 pl-2">
+              <label for="numtel" class="d-block text-left ml-2 mb-1"
+                >Teléfono</label
+              >
+              <input
+                class="form-control border-0 softer"
+                type="text"
+                name="numtel"
+                maxlength="15"
+                id="numtel"
+                placeholder="Digite teléfono"
+                required
+              />
             </div>
           </div>
 
-          <div class="form-group mb-1">
-            <label for="numdoc" class="d-block text-left ml-2 mb-1"
-              >Número de documento</label
-            >
-            <input
-              class="form-control border-0 softer"
-              type="text"
-              name="numdoc"
-              id="numdoc"
-              placeholder="Número"
-            />
-          </div>
-
           <div class="form-group">
+            <label for="password" class="d-block text-left ml-2 mb-1"
+              >Contraseña</label
+            >
             <input
               class="form-control border-0 softer"
               type="password"
               name="password"
+              id="password"
               placeholder="Digite contraseña"
+              required
             />
           </div>
 
@@ -143,6 +186,7 @@
       </article>
     </section>
 
+    <script src="./app.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

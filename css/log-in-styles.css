@@ -17,6 +17,7 @@ body {
 }
 
 .back {
+  overflow-y: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -41,17 +42,17 @@ body {
 }
 
 .company:before {
-  content: "Sheal";
+  content: 'Sheal';
   display: block;
   font-weight: 700;
 }
 
 .form-group {
-  width: 70%;
+  width: 80%;
 }
 
-.form-control:focus {
-  background-color: transparent;
+.custom-file .custom-file-label:after {
+  content: 'Buscar';
 }
 
 .sign-in-btn {
@@ -68,5 +69,14 @@ body {
 
 .sign-in-btn:focus {
   background-color: #114eb6;
+}
+
+.signup {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/cloris-ying-leWpkg7XKd0-unsplash(1).jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cloris-ying-leWpkg7XKd0-unsplash(1).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
 }
 /*# sourceMappingURL=log-in-styles.css.map */
