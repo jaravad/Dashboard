@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/log-in-styles.css" />
+
+    <title>Regístrate - Sheal</title>
+  </head>
+  <body>
+    <section
+      class="container-fluid vh-100 row no-gutters justify-content-center back"
+    >
+      <article
+        class="log-in-card text-center soft align-self-center col-11 col-sm-7 col-md-6 col-lg-4"
+      >
+        <!-- <h1 class="company mt-2"></h1> -->
+        <!-- <img class="w-25" src="./images/flame.png" alt="logo" /> -->
+        <h2 class="mt-1">Crear cuenta de empresa</h2>
+        <form
+          action="operators.html"
+          class="d-flex flex-column mt-4 align-items-center"
+        >
+          <div class="form-group mb-1">
+            <label for="name" class="d-block text-left ml-2 mb-1"
+              >Nombre del Representante</label
+            >
+            <input
+              class="form-control border-0 softer"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nombre"
+            />
+          </div>
+
+          <div class="form-group mb-1">
+            <label for="email" class="d-block text-left ml-2 mb-1"
+              >Correo electrónico</label
+            >
+            <input
+              class="form-control border-0 softer"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Ingresa tu correo"
+            />
+          </div>
+
+          <div class="form-group mb-1">
+            <label class="d-block text-left ml-2 mb-1">Tipo de documento</label>
+            <div class="mb-1 d-flex justify-content-around">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="doc"
+                  id="ti"
+                  value="ti"
+                  checked
+                />
+                <label class="form-check-label" for="ti">
+                  TI
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="doc"
+                  id="cc"
+                  value="CC"
+                />
+                <label class="form-check-label" for="cc">
+                  CC
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="doc"
+                  id="ce"
+                  value="CE"
+                />
+                <label class="form-check-label" for="ce">
+                  CE
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group mb-1">
+            <label for="numdoc" class="d-block text-left ml-2 mb-1"
+              >Número de documento</label
+            >
+            <input
+              class="form-control border-0 softer"
+              type="text"
+              name="numdoc"
+              id="numdoc"
+              placeholder="Número"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              class="form-control border-0 softer"
+              type="password"
+              name="password"
+              placeholder="Digite contraseña"
+            />
+          </div>
+
+          <div class="form-group mb-2">
+            <button
+              class="font-weight-bolder text-white form-control border-0 sign-in-btn softer text-uppercase"
+              type="submit"
+            >
+              Registrate
+            </button>
+          </div>
+
+          <p style="font-size: 0.8em;" class="mt-2">
+            Ya tienes cuenta?
+            <a class="font-weight-bold" href="./index.html">Entra</a>
+          </p>
+        </form>
+      </article>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
