@@ -23,18 +23,18 @@
   </head>
   <body style="font-size: 14px;">
     <section
-      class="container-fluid row no-gutters justify-content-center back signup"
+      class="container-fluid vh-100 row no-gutters justify-content-center back signup"
     >
       <article
         class="log-in-card text-center soft align-self-center col-11 col-sm-7 col-md-6 col-lg-4 my-5"
       >
         <!-- <h1 class="company mt-2"></h1> -->
         <!-- <img class="w-25" src="./images/flame.png" alt="logo" /> -->
-        <h2 class="mt-1">Crear cuenta de empresa</h2>
+        <h3 class="mt-1">Crear cuenta de empresa</h3>
         <form
           action="./index.html"
           class="d-flex flex-column align-items-center"
-          name="signupForm"
+          name="signUpForm"
         >
           <div class="form-group mb-1">
             <label for="name" class="d-block text-left ml-2 mb-1"
@@ -58,33 +58,34 @@
                   class="custom-control-input"
                   type="radio"
                   name="doc"
-                  id="ti"
-                  value="TI"
-                  checked
-                />
-                <label class="custom-control-label" for="ti">
-                  TI
-                </label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input
-                  class="custom-control-input"
-                  type="radio"
-                  name="doc"
                   id="cc"
-                  value="CC"
+                  value="cc"
                 />
                 <label class="custom-control-label" for="cc">
                   CC
                 </label>
               </div>
+
+              <div class="custom-control custom-radio">
+                <input
+                  class="custom-control-input"
+                  type="radio"
+                  name="doc"
+                  id="pa"
+                  value="pa"
+                />
+                <label class="custom-control-label" for="pa">
+                  PA
+                </label>
+              </div>
+
               <div class="custom-control custom-radio">
                 <input
                   class="custom-control-input"
                   type="radio"
                   name="doc"
                   id="ce"
-                  value="CE"
+                  value="ce"
                 />
                 <label class="custom-control-label" for="ce">
                   CE
@@ -198,7 +199,7 @@
 
     <script type="text/javascript" src="./js/general.js"></script>
     <script type="text/javascript" src="./js/auth/Authentication.js"></script>
-    <script type="text/javascript" src="./js/auth/authController.js"></script>
+    <script type="text/javascript" src="./js/auth/signUp.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

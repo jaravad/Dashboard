@@ -1,12 +1,11 @@
-const form = document.forms['signupForm'];
+const form = document.forms['signInForm'];
 form.addEventListener('submit', function handleFormSubmit(event) {
   event.preventDefault();
 
   const email = form['email'].value;
   const password = form['password'].value;
-  const name = form['empname'].value;
 
   const auth = new Authentication();
-  auth.crearCuentaEmailPass(email, password, name);
-  form.reset();
+  auth.autEmailPass(email, password);
+  form.reset(); //try
 });

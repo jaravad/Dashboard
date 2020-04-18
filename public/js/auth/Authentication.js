@@ -1,8 +1,25 @@
 class Authentication {
   autEmailPass(email, password) {
-    //$('#avatar').attr('src', 'imagenes/usuario_auth.png')
-    //Materialize.toast(`Bienvenido ${result.user.displayName}`, 5000)
-    //$('.modal').modal('close')
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .then((result) => {
+        if (result.user.emailVerified) {
+          Swal.fire(
+            `Bienvenido! ${result.user.displayName}`,
+            'Has iniciado sesión!',
+            'success'
+          );
+        } else {
+          firebase.auth().signOut();
+          Swal.fire({
+            title: 'Error!',
+            text: 'Lo sentimos, no has verificado tu cuenta',
+            icon: 'error',
+            confirmButtonText: 'Ok',
+          });
+        }
+      });
   }
 
   crearCuentaEmailPass(email, password, nombre) {
@@ -15,7 +32,7 @@ class Authentication {
         });
 
         const configuracion = {
-          url: 'http://websheal.web.app',
+          url: 'http://localhost:5500/',
         };
 
         result.user.sendEmailVerification(configuracion).catch((error) => {
@@ -30,7 +47,11 @@ class Authentication {
 
         firebase.auth().signOut();
 
-        Swal.fire(`Bienvenido! ${nombre}`, 'Debes iniciar sesión!', 'success');
+        Swal.fire(
+          `Bienvenido! ${nombre}`,
+          'Te hemos enviado un email para que verifiques tu cuenta!',
+          'success'
+        );
       })
       .catch((error) => {
         console.error(error);
