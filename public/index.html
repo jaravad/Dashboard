@@ -38,20 +38,22 @@
         >
           <div class="form-group">
             <input
-              class="form-control border-0 softer"
+              class="form-control softer"
               type="email"
               name="email"
               id="email"
               placeholder="Ingresa tu correo"
+              required
             />
           </div>
 
           <div class="form-group">
             <input
-              class="form-control border-0 softer"
+              class="form-control softer"
               type="password"
               name="password"
               placeholder="Digite contraseña"
+              required
             />
           </div>
 
@@ -63,10 +65,62 @@
               Iniciar sesión
             </button>
           </div>
-          <a href="#" class="font-weight-bold" style="font-size: 0.8em;"
+          <a
+            href="#"
+            class="font-weight-bold"
+            data-toggle="modal"
+            data-target="#passwordReset"
             >Olvidaste tu contraseña?</a
           >
-          <p style="font-size: 0.8em;" class="mt-2">
+          <!-- modal -->
+          <div
+            class="modal fade"
+            id="passwordReset"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="PasswordResetTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content soft">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    Restablece tu constraseña
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <label
+                    for="exampleInputEmail1"
+                    class="text-left d-block w-75 mx-auto"
+                    >Ingresa tu email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control w-75 mx-auto mb-3 softer"
+                    id="resetEmail"
+                    aria-describedby="emailHelp"
+                    placeholder="email"
+                  />
+                  <button
+                    type="button"
+                    onclick="resetPassword()"
+                    class="text-uppercase font-weight-bold w-75 mb-4 mx-auto btn btn-primary sign-in-btn"
+                  >
+                    Enviar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="mt-2">
             No tienes cuenta?
             <a class="font-weight-bold" href="./register.html">Crea una</a>
           </p>
