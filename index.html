@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/log-in-styles.css" />
 
-    <title>Inicia sesión - Sheal</title>
+    <title>Sign In - Sheal</title>
   </head>
   <body>
     <section
@@ -30,7 +30,7 @@
       >
         <h1 class="company mt-2"></h1>
         <img class="w-25" src="./images/flame.png" alt="logo" />
-        <h2 class="mt-3">Iniciar sesión</h2>
+        <h2 class="mt-2">Sign In</h2>
         <form
           action="operators.html"
           class="d-flex flex-column mt-4 align-items-center"
@@ -42,7 +42,7 @@
               type="email"
               name="email"
               id="email"
-              placeholder="Ingresa tu correo"
+              placeholder="Your email"
               required
             />
           </div>
@@ -52,7 +52,7 @@
               class="form-control softer"
               type="password"
               name="password"
-              placeholder="Digite contraseña"
+              placeholder="Password"
               required
             />
           </div>
@@ -62,7 +62,7 @@
               class="font-weight-bolder text-white form-control border-0 sign-in-btn softer text-uppercase"
               type="submit"
             >
-              Iniciar sesión
+              Sign In
             </button>
           </div>
           <a
@@ -70,7 +70,7 @@
             class="font-weight-bold"
             data-toggle="modal"
             data-target="#passwordReset"
-            >Olvidaste tu contraseña?</a
+            >Forgot your password?</a
           >
           <!-- modal -->
           <div
@@ -85,7 +85,7 @@
               <div class="modal-content soft">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLongTitle">
-                    Restablece tu constraseña
+                    Reset password
                   </h5>
                   <button
                     type="button"
@@ -100,28 +100,28 @@
                   <label
                     for="exampleInputEmail1"
                     class="text-left d-block w-75 mx-auto"
-                    >Ingresa tu email</label
+                    >Your email</label
                   >
                   <input
                     type="email"
                     class="form-control w-75 mx-auto mb-3 softer"
                     id="resetEmail"
                     aria-describedby="emailHelp"
-                    placeholder="email"
+                    placeholder="Email"
                   />
                   <button
                     type="button"
                     class="text-uppercase font-weight-bold w-75 mb-4 mx-auto btn btn-primary sign-in-btn"
                   >
-                    Enviar
+                    Reset password
                   </button>
                 </div>
               </div>
             </div>
           </div>
           <p class="mt-2">
-            No tienes cuenta?
-            <a class="font-weight-bold" href="./register.html">Crea una</a>
+            Don't have an account?
+            <a class="font-weight-bold" href="./register.html">Sign Up</a>
           </p>
         </form>
       </article>

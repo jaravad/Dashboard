@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/log-in-styles.css" />
 
-    <title>Regístrate - Sheal</title>
+    <title>Sign Up - Sheal</title>
   </head>
   <body style="font-size: 14px;">
     <section
@@ -30,7 +30,7 @@
       >
         <!-- <h1 class="company mt-2"></h1> -->
         <!-- <img class="w-25" src="./images/flame.png" alt="logo" /> -->
-        <h3 class="mt-1">Crear cuenta de empresa</h3>
+        <h3 class="mt-1">Create an account</h3>
         <form
           action="./index.html"
           class="d-flex flex-column align-items-center"
@@ -38,20 +38,20 @@
         >
           <div class="form-group mb-1">
             <label for="name" class="d-block text-left ml-2 mb-1"
-              >Nombre del Representante</label
+              >Name</label
             >
             <input
               class="form-control softer"
               type="text"
               name="name"
               id="name"
-              placeholder="Nombre"
+              placeholder="Type a name"
               required
             />
           </div>
 
           <div class="form-group mb-1">
-            <label class="d-block text-left ml-2 mb-1">Tipo de documento</label>
+            <label class="d-block text-left ml-2 mb-1">Document Type</label>
             <div class="d-flex justify-content-around">
               <div class="custom-control custom-radio">
                 <input
@@ -96,7 +96,7 @@
 
           <div class="form-group mb-2">
             <label for="numdoc" class="d-block text-left ml-2 mb-1"
-              >Número de documento</label
+              >ID Number</label
             >
             <input
               class="form-control softer"
@@ -104,21 +104,21 @@
               name="numdoc"
               id="numdoc"
               maxlength="16"
-              placeholder="Número"
+              placeholder="Type an ID"
               required
             />
           </div>
 
           <div class="form-group mb-2">
             <label for="email" class="d-block text-left ml-2 mb-1"
-              >Correo electrónico</label
+              >Email</label
             >
             <input
               class="form-control softer"
               type="email"
               name="email"
               id="email"
-              placeholder="Ingresa tu correo"
+              placeholder="Your email"
               required
             />
           </div>
@@ -126,27 +126,27 @@
           <div class="custom-file form-group mb-1">
             <input type="file" class="custom-file-input" id="img" required />
             <label class="custom-file-label text-left overflow-hidden" for="img"
-              >Logo de la empresa</label
+              >Logo</label
             >
           </div>
 
           <div class="form-group mb-1 d-flex justify-content-between">
             <div class="w-50 pr-2">
               <label for="empname" class="d-block text-left ml-2 mb-1"
-                >Empresa</label
+                >Enterprise name</label
               >
               <input
                 class="form-control softer"
                 type="text"
                 name="empname"
                 id="empname"
-                placeholder="Digite nombre"
+                placeholder="Type a name"
                 required
               />
             </div>
             <div class="w-50 pl-2">
               <label for="numtel" class="d-block text-left ml-2 mb-1"
-                >Teléfono</label
+                >Phone number</label
               >
               <input
                 class="form-control softer"
@@ -154,7 +154,7 @@
                 name="numtel"
                 maxlength="15"
                 id="numtel"
-                placeholder="Digite teléfono"
+                placeholder="Type a phone number"
                 required
               />
             </div>
@@ -162,14 +162,14 @@
 
           <div class="form-group">
             <label for="password" class="d-block text-left ml-2 mb-1"
-              >Contraseña</label
+              >Password</label
             >
             <input
               class="form-control softer"
               type="password"
               name="password"
               id="password"
-              placeholder="Digite contraseña"
+              placeholder="Type a secure password"
               required
             />
           </div>
@@ -179,27 +179,18 @@
               class="font-weight-bolder text-white form-control border-0 sign-in-btn softer text-uppercase"
               type="submit"
             >
-              Registrate
+              Sign Up
             </button>
           </div>
 
           <p class="mt-2">
-            Ya tienes cuenta?
-            <a class="font-weight-bold" href="./index.html">Entra</a>
+            Already have an account?
+            <a class="font-weight-bold" href="./index.html">Sign In</a>
           </p>
         </form>
       </article>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-
-    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
-    <script src="./js/config/ConfigFirebase.js"></script>
-
-    <script type="text/javascript" src="./js/general.js"></script>
-    <script type="text/javascript" src="./js/auth/Authentication.js"></script>
-    <script type="text/javascript" src="./js/auth/signUp.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -50,6 +50,10 @@ body {
   width: 80%;
 }
 
+.form-control {
+  font-size: inherit !important;
+}
+
 .custom-file .custom-file-label:after {
   content: 'Buscar';
 }
