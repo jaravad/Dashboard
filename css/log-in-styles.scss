@@ -80,3 +80,19 @@ body {
   background-position: center;
   height: auto;
 }
+
+.fade-anim {
+  opacity: 0;
+  animation: fade 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

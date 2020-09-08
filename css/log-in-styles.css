@@ -83,4 +83,30 @@ body {
   background-position: center;
   height: auto;
 }
+
+.fade-anim {
+  opacity: 0;
+  -webkit-animation: fade 0.5s ease;
+          animation: fade 0.5s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=log-in-styles.css.map */

@@ -151,12 +151,17 @@ a:hover {
   background-image: url("../images/undraw_air_support_wy1q.svg");
 }
 
-.fade {
+.fade-anim {
   opacity: 0;
-  -webkit-animation: fade 0.5s ease 0.3s;
-          animation: fade 0.5s ease 0.3s;
+  -webkit-animation: fade 0.5s ease;
+          animation: fade 0.5s ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+.fade-delay {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .nav-anim {
