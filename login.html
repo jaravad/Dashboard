@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/log-in-styles.css" />
+
+    <title>Sign In - Sheal</title>
+  </head>
+  <body>
+    <section
+      class="container-fluid vh-100 row no-gutters justify-content-center back"
+    >
+      <article
+        class="log-in-card text-center soft align-self-center col-11 col-sm-7 col-md-6 col-lg-4 mt-3"
+      >
+        <h1 class="company mt-2"></h1>
+        <img class="w-25" src="./images/flame.png" alt="logo" />
+        <h2 class="mt-2">Sign In</h2>
+        <form
+          action="operators.html"
+          class="d-flex flex-column mt-4 align-items-center"
+          name="signInForm"
+        >
+          <div class="form-group">
+            <input
+              class="form-control softer"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              class="form-control softer"
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <button
+              class="font-weight-bolder text-white form-control border-0 sign-in-btn softer text-uppercase"
+              type="submit"
+            >
+              Sign In
+            </button>
+          </div>
+          <a
+            href="#"
+            class="font-weight-bold"
+            data-toggle="modal"
+            data-target="#passwordReset"
+            >Forgot your password?</a
+          >
+          <!-- modal -->
+          <div
+            class="modal fade"
+            id="passwordReset"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="PasswordResetTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content soft">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    Reset password
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <label
+                    for="exampleInputEmail1"
+                    class="text-left d-block w-75 mx-auto"
+                    >Your email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control w-75 mx-auto mb-3 softer"
+                    id="resetEmail"
+                    aria-describedby="emailHelp"
+                    placeholder="Email"
+                  />
+                  <button
+                    type="button"
+                    class="text-uppercase font-weight-bold w-75 mb-4 mx-auto btn btn-primary sign-in-btn"
+                  >
+                    Reset password
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="mt-2">
+            Don't have an account?
+            <a class="font-weight-bold" href="./register.html">Sign Up</a>
+          </p>
+        </form>
+      </article>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

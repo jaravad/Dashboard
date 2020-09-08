@@ -31,8 +31,8 @@ h6 {
 
 .navbar {
   background-color: #8f59c1;
-  -webkit-box-shadow: 0px 10px 15px -6px rgba(0, 0, 0, 0.37);
-          box-shadow: 0px 10px 15px -6px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 0px 10px 15px -6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 10px 15px -6px rgba(0, 0, 0, 0.25);
 }
 
 .navbar .navbar-brand {
@@ -133,15 +133,15 @@ a:hover {
 }
 
 .results div img {
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: -webkit-box-shadow 0.2s ease;
+  transition: -webkit-box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
 }
 
 .results:hover div img {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-box-shadow: 11px 11px 22px #c7c7c7, -11px -11px 22px #ffffff;
+          box-shadow: 11px 11px 22px #c7c7c7, -11px -11px 22px #ffffff;
 }
 
 .globe {
@@ -149,5 +149,62 @@ a:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../images/undraw_air_support_wy1q.svg");
+}
+
+.fade {
+  opacity: 0;
+  -webkit-animation: fade 0.5s ease 0.3s;
+          animation: fade 0.5s ease 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.nav-anim {
+  -webkit-transform: translate(0, -50px);
+          transform: translate(0, -50px);
+  -webkit-animation: navbar 0.5s ease, fade, fade 0.5s ease;
+          animation: navbar 0.5s ease, fade, fade 0.5s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+/*==========keyframes==========*/
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes navbar {
+  from {
+    -webkit-transform: translate(0, -50px);
+            transform: translate(0, -50px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes navbar {
+  from {
+    -webkit-transform: translate(0, -50px);
+            transform: translate(0, -50px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 /*# sourceMappingURL=dashboard.css.map */
